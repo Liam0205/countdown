@@ -1,6 +1,13 @@
 gen_rule (
   name = 'all',
   deps = [
-    ':hello_world',
+    ':countdown',
   ]
+)
+
+cc_binary(
+  name = 'countdown',
+  srcs = [
+    'countdown.cc',
+  ],
 )
