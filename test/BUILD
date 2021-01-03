@@ -3,4 +3,7 @@ cc_binary(
   srcs = [
     'countdown.cc',
   ],
+  deps = [
+    '#pthread',
+  ],
 )
